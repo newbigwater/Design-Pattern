@@ -1,0 +1,14 @@
+---
+type: MOC
+creation date: 2026-04-01 11:12
+tags: 
+  - doc
+  - behavioral_pattern
+backlinks: 
+  - "[[doc/_MOC_.md|doc]]"
+outgoinglinks:
+  - "[[doc/03. Behavioral Pattern/03.01. Strategy|01. Strategy]]"
+---
+
+---
+

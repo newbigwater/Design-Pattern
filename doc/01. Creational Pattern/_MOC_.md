@@ -1,0 +1,13 @@
+---
+type: MOC
+creation date: 2026-03-29 17:50
+tags:
+  - doc
+  - creational_pattern
+backlinks:
+  - "[[doc/_MOC_.md|doc]]"
+outgoinglinks:
+  - "[[doc/01. Creational Pattern/01.01. Signleton|01. Signleton]]"
+---
+---
+
