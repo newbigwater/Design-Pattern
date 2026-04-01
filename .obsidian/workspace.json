@@ -1,0 +1,345 @@
+{
+  "main": {
+    "id": "4bed5127452528ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "44f3b6592104a512",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2ce8c843f5ae34a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "doc/_MOC_.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "_MOC_"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "558b26de04bb99ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "adc900ba988b79ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eacc3689c310faf4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "eca3560dcc178bb4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "60720c8d6b6dd21e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "9e687dce14d105ab",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "File Tree"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "1d8aaf53ddb5f905",
+    "type": "split",
+    "children": [
+      {
+        "id": "f621ef8ad50c4551",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9310dd5895fef6d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "56b872b15fe70e9e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Readme.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Readme"
+            }
+          },
+          {
+            "id": "0287b83af77f3490",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "52f8e20941a2c55a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "00. System/00.03. AI/00. Core/03. Human-Guides/🖋️ StudyNote Markdown Rulebook.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for 🖋️ StudyNote Markdown Rulebook"
+            }
+          },
+          {
+            "id": "b54db232bcb30679",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "language/Podo/01.Standard/Start2/02. 일반 동사를 활용한 인물 소개 연습.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "a76a9b61d64d6354",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fcb15120884b273e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/02. 빅데이터의 유형/02.01. 빅데이터의 유형.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 02.01. 빅데이터의 유형"
+            }
+          },
+          {
+            "id": "7cb770e66a7efc72",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "language/_MOC_.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from _MOC_"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b0e8089076c21a76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8acff58237de7c6",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/02. 빅데이터의 유형/02.01. 빅데이터의 유형.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.5087618855792593,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of 02.01. 빅데이터의 유형"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 370.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "omnisearch:Omnisearch": false,
+      "translate:Open translation view": false,
+      "smart-composer:Open smart composer": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false,
+      "update-relative-links-Renewal:Update all relative links": false,
+      "update-relative-links-Renewal:Preview relative link updates": false,
+      "update-relative-links-Renewal:Update current file links": false,
+      "update-relative-links-Renewal:Update links in current folder": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "c2ce8c843f5ae34a",
+  "lastOpenFiles": [
+    "doc/03. Behavioral Pattern/_MOC_.md",
+    "doc/_MOC_.md",
+    "doc/01. Creational Pattern/_MOC_.md",
+    "doc/03. Behavioral Pattern/03.01. Strategy.md",
+    "doc/03. Behavioral Pattern/03.01. Strategy_tmp.md",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44/In/A1292024005O02",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44/In",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44/Out",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44",
+    "src/unitTest/bin/Debug/_03.Behavioral_Pattern.dll",
+    "src/unitTest/bin/Debug/_01.Creational_Pattern.dll",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30/In/A1292024005O02",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30/Out",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30/In",
+    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30",
+    "doc/01. Creational Pattern/01.01. Signleton.md",
+    "doc/01. Creational Pattern/01. Signleton_tmp.md",
+    "doc/01. Creational Pattern/01. Signgleton/_MOC_.md",
+    "README.md",
+    "doc/Untitled.md",
+    "01. Doc/01. Design Pattern/_MOC_.md",
+    "01. Doc/01. Design Pattern/01.02. Object-oriented programming.md",
+    "01. Doc/01. Design Pattern/Untitled.md",
+    "01. Doc/01. Design Pattern/01.01. Design Pattern.md",
+    "01. Doc/01. Design Pattern/Object-oriented programming/_MOC_.md",
+    "01. Doc/01. Design Pattern/00. attachments/Pasted image 20260326081723.png",
+    "01. Doc/_MOC_.md",
+    "01. Doc/Untitled.md",
+    "Untitled.md",
+    ".trash/Untitled.md",
+    "00. System/00.03. AI/01. Doc/01. Design/Artifact - 설계서.md",
+    "00. System/00.03. AI/01. Doc/01. Design/04. Agent Persona Portfolio - 설계서.md",
+    "00. System/00.03. AI/01. Doc/01. Design/03. Operation System - 설계서.md",
+    "00. System/00.03. AI/01. Doc/01. Design/04. Agent - 설계서.md",
+    "00. System/00.03. AI/01. Doc/02. Manual/validate_agent_structure - 사용법.md",
+    "00. System/00.03. AI/01. Doc/02. Manual/update_agent_moc - 사용법.md",
+    "00. System/00.03. AI/01. Doc/02. Manual/Persona Prompt 생성 - 사용법.md",
+    "00. System/00.02. Reference/attachments/Pasted image 20240418104202.png",
+    "00. System/00.02. Reference/attachments/Pasted image 20240529232814.png",
+    "00. System/00.02. Reference/attachments/Pasted image 20240418090327.png",
+    "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/02. 빅데이터의 유형/00. attachments/Pasted image 20260324084824.png",
+    "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/01. 빅데이터의 특징/00. attachments/Pasted image 20260324084554.png",
+    "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/01. 빅데이터의 특징/00. attachments/Pasted image 20260324084513.png",
+    "Computer-Science/Data/BAE/01. Written exam/00. attachments/Pasted image 20260203094114.png",
+    "Computer-Science/Data/BAE/01. Written exam/01. 빅데이터 개요/01. 데이터/00. attachments/Pasted image 20260324080822.png",
+    "Computer-Science/Data/BAE/01. Written exam/01. 빅데이터 개요/01. 데이터/00. attachments/Pasted image 20260324080356.png",
+    "Factory Automation/Battery/Basic/2차전지 배터리 Cell.canvas",
+    "Computer Science/Programming/UI/C#/WPF/Prism/Prism Library를 사용하는 개발자를 위한 안내.canvas",
+    "Untitled.canvas",
+    "Brain/무제 파일.canvas"
+  ]
+}

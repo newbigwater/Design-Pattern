@@ -1,0 +1,35 @@
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "YYYY-MM-DD dddd",
+    "template": "00. System/00.01. Template/AB. Template-Note.md",
+    "folder": "01. Inbox",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": false
+  },
+  "monthly": {
+    "format": "MM 월",
+    "template": "",
+    "folder": "01. Inbox",
+    "enabled": false
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": false
+  },
+  "yearly": {
+    "format": "YYYY 년",
+    "template": "",
+    "folder": "01. Inbox",
+    "enabled": false
+  }
+}
