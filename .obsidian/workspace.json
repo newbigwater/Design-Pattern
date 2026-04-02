@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "44f3b6592104a512",
+        "id": "428689202a1e60b6",
         "type": "tabs",
         "children": [
           {
-            "id": "c2ce8c843f5ae34a",
+            "id": "4b880b1888598ee6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "doc/_MOC_.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "_MOC_"
+              "title": "New tab"
             }
           }
         ]
@@ -94,12 +80,11 @@
               "title": "File Tree"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 336.5
   },
   "right": {
     "id": "1d8aaf53ddb5f905",
@@ -278,10 +263,8 @@
       "bases:Create new base": false,
       "omnisearch:Omnisearch": false,
       "translate:Open translation view": false,
-      "smart-composer:Open smart composer": false,
       "file-tree-alternative:File Tree Alternative Plugin": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false,
       "update-relative-links-Renewal:Update all relative links": false,
       "update-relative-links-Renewal:Preview relative link updates": false,
       "update-relative-links-Renewal:Update current file links": false,
@@ -289,24 +272,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c2ce8c843f5ae34a",
+  "active": "4b880b1888598ee6",
   "lastOpenFiles": [
-    "doc/03. Behavioral Pattern/_MOC_.md",
-    "doc/_MOC_.md",
-    "doc/01. Creational Pattern/_MOC_.md",
+    "src/02. Structural Pattern/bin/Debug/_02.Structural_Pattern.dll",
+    "src/01. Creational Pattern/bin/Debug/_01.Creational_Pattern.dll",
+    "src/app/obj/Debug/app.csproj.AssemblyReference.cache",
+    "src/03. Behavioral Pattern/obj/Debug/03. Behavioral Pattern.csproj.AssemblyReference.cache",
+    "src/01. Creational Pattern/obj/Debug/01. Creational Pattern.csproj.AssemblyReference.cache",
+    "00. System/00.01. Template/AC. Template-Pattern-Doc.md",
+    "doc/02. Structural Pattern/02.01. Adapter.md",
     "doc/03. Behavioral Pattern/03.01. Strategy.md",
-    "doc/03. Behavioral Pattern/03.01. Strategy_tmp.md",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44/In/A1292024005O02",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44/In",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44/Out",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_11_44",
-    "src/unitTest/bin/Debug/_03.Behavioral_Pattern.dll",
-    "src/unitTest/bin/Debug/_01.Creational_Pattern.dll",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30/In/A1292024005O02",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30/Out",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30/In",
-    "src/TestResults/Deploy_A1292024005 2026-04-01 11_10_30",
+    "src/01. Creational Pattern/AbstractFactory/01. Common/FactoryAbstract_ProductDAO.cs",
+    "src/01. Creational Pattern/AbstractFactory/01. Common/FactoryAbstract_UserInfoDAO.cs",
+    "src/01. Creational Pattern/AbstractFactory/01. Common",
     "doc/01. Creational Pattern/01.01. Signleton.md",
+    "src/02. Structural Pattern/Adapter/Adapter_PrintBanner_CompositeAdapter_Ver3.cs",
+    "src/02. Structural Pattern/Adapter/Adapter_PrintBanner_InheritanceAdapter_Ver2.cs",
+    "src/02. Structural Pattern/Adapter/Adapter_PrintBanner_상속Adapter_Ver2.cs",
+    "doc/02. Structural Pattern/00. attachments/Pasted image 20260403075144.png",
+    "doc/02. Structural Pattern/00. attachments/Pasted image 20260403075139.png",
+    "doc/02. Structural Pattern/_MOC_.md",
+    "src/02. Structural Pattern/Adapter/README.md",
+    "doc/03. Behavioral Pattern/00. attachments/Pasted image 20260402083010.png",
+    "doc/03. Behavioral Pattern/00. attachments/Pasted image 20260402082934.png",
+    "doc/01. Creational Pattern/00. attachments/Pasted image 20260402082904.png",
+    "doc/01. Creational Pattern/00. attachments/Pasted image 20260402082853.png",
+    "doc/_MOC_.md",
+    "doc/03. Behavioral Pattern/_MOC_.md",
+    "doc/01. Creational Pattern/_MOC_.md",
+    "doc/03. Behavioral Pattern/03.01. Strategy_tmp.md",
     "doc/01. Creational Pattern/01. Signleton_tmp.md",
     "doc/01. Creational Pattern/01. Signgleton/_MOC_.md",
     "README.md",
@@ -323,20 +317,9 @@
     ".trash/Untitled.md",
     "00. System/00.03. AI/01. Doc/01. Design/Artifact - 설계서.md",
     "00. System/00.03. AI/01. Doc/01. Design/04. Agent Persona Portfolio - 설계서.md",
-    "00. System/00.03. AI/01. Doc/01. Design/03. Operation System - 설계서.md",
-    "00. System/00.03. AI/01. Doc/01. Design/04. Agent - 설계서.md",
-    "00. System/00.03. AI/01. Doc/02. Manual/validate_agent_structure - 사용법.md",
-    "00. System/00.03. AI/01. Doc/02. Manual/update_agent_moc - 사용법.md",
-    "00. System/00.03. AI/01. Doc/02. Manual/Persona Prompt 생성 - 사용법.md",
     "00. System/00.02. Reference/attachments/Pasted image 20240418104202.png",
     "00. System/00.02. Reference/attachments/Pasted image 20240529232814.png",
     "00. System/00.02. Reference/attachments/Pasted image 20240418090327.png",
-    "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/02. 빅데이터의 유형/00. attachments/Pasted image 20260324084824.png",
-    "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/01. 빅데이터의 특징/00. attachments/Pasted image 20260324084554.png",
-    "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/01. 빅데이터의 특징/00. attachments/Pasted image 20260324084513.png",
-    "Computer-Science/Data/BAE/01. Written exam/00. attachments/Pasted image 20260203094114.png",
-    "Computer-Science/Data/BAE/01. Written exam/01. 빅데이터 개요/01. 데이터/00. attachments/Pasted image 20260324080822.png",
-    "Computer-Science/Data/BAE/01. Written exam/01. 빅데이터 개요/01. 데이터/00. attachments/Pasted image 20260324080356.png",
     "Factory Automation/Battery/Basic/2차전지 배터리 Cell.canvas",
     "Computer Science/Programming/UI/C#/WPF/Prism/Prism Library를 사용하는 개발자를 위한 안내.canvas",
     "Untitled.canvas",
