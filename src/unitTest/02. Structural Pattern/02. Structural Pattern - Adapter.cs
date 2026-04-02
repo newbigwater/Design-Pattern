@@ -18,7 +18,7 @@ namespace unitTest._02._Structural_Pattern
         [TestMethod("[Adapter Ver2 Uses Inheritance Class Adapter]")]
         public void Adapter_Ver2_Uses_Inheritance_Class_Adapter()
         {
-            Adapter_IPrint_Ver2 printer = new Adapter_PrintBanner_ClassAdapter_Ver2("Hello Adapter");
+            Adapter_IPrint_Ver2 printer = new Adapter_PrintBanner_InheritanceAdapter_Ver2("Hello Adapter");
 
             Assert.AreEqual("(Hello Adapter)", printer.PrintWeak());
             Assert.AreEqual("*Hello Adapter*", printer.PrintStrong());
@@ -28,7 +28,7 @@ namespace unitTest._02._Structural_Pattern
         public void Adapter_Ver3_Uses_Composition_Object_Adapter()
         {
             Adapter_Banner banner = new Adapter_Banner("Hello Adapter");
-            Adapter_IPrint_Ver2 printer = new Adapter_PrintBanner_ObjectAdapter_Ver3(banner);
+            Adapter_IPrint_Ver2 printer = new Adapter_PrintBanner_CompositeAdapter_Ver3(banner);
 
             Assert.AreEqual("(Hello Adapter)", printer.PrintWeak());
             Assert.AreEqual("*Hello Adapter*", printer.PrintStrong());
@@ -38,7 +38,7 @@ namespace unitTest._02._Structural_Pattern
         public void Adapter_Ver3_Throws_On_Null_Adaptee()
         {
             Assert.ThrowsException<System.ArgumentNullException>(
-                () => new Adapter_PrintBanner_ObjectAdapter_Ver3(null));
+                () => new Adapter_PrintBanner_CompositeAdapter_Ver3(null));
         }
     }
 }

@@ -4,9 +4,9 @@
     /// Ver2: Class Adapter (inheritance approach).
     /// Inherits adaptee and implements target interface.
     /// </summary>
-    public class Adapter_PrintBanner_ClassAdapter_Ver2 : Adapter_Banner, Adapter_IPrint_Ver2
+    public class Adapter_PrintBanner_InheritanceAdapter_Ver2 : Adapter_Banner, Adapter_IPrint_Ver2
     {
-        public Adapter_PrintBanner_ClassAdapter_Ver2(string value)
+        public Adapter_PrintBanner_InheritanceAdapter_Ver2(string value)
             : base(value)
         {
         }

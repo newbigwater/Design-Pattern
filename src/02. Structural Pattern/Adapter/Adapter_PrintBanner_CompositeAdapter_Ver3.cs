@@ -6,11 +6,11 @@ namespace _02.Structural_Pattern.Adapter
     /// Ver3: Object Adapter (composition approach).
     /// Wraps adaptee instance and delegates calls.
     /// </summary>
-    public class Adapter_PrintBanner_ObjectAdapter_Ver3 : Adapter_IPrint_Ver2
+    public class Adapter_PrintBanner_CompositeAdapter_Ver3 : Adapter_IPrint_Ver2
     {
         private readonly Adapter_Banner _banner;
 
-        public Adapter_PrintBanner_ObjectAdapter_Ver3(Adapter_Banner banner)
+        public Adapter_PrintBanner_CompositeAdapter_Ver3(Adapter_Banner banner)
         {
             _banner = banner ?? throw new ArgumentNullException(nameof(banner));
         }

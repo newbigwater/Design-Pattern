@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="01. Creational Pattern\01. Creational Pattern - Singleton.cs" />
     <Compile Include="01. Creational Pattern\01. Creational Pattern.cs" />
+    <Compile Include="02. Structural Pattern\02. Structural Pattern - Adapter.cs" />
     <Compile Include="02. Structural Pattern\02. Structural Pattern.cs" />
     <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern - Strategy.cs" />
     <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern.cs" />

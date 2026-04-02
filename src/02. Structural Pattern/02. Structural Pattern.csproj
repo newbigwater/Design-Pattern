@@ -43,8 +43,8 @@
   <ItemGroup>
     <Compile Include="Adapter\Adapter_Banner.cs" />
     <Compile Include="Adapter\Adapter_IPrint_Ver2.cs" />
-    <Compile Include="Adapter\Adapter_PrintBanner_ClassAdapter_Ver2.cs" />
-    <Compile Include="Adapter\Adapter_PrintBanner_ObjectAdapter_Ver3.cs" />
+    <Compile Include="Adapter\Adapter_PrintBanner_InheritanceAdapter_Ver2.cs" />
+    <Compile Include="Adapter\Adapter_PrintBanner_CompositeAdapter_Ver3.cs" />
     <Compile Include="Adapter\Adapter_PrintBanner_Ver1.cs" />
     <Compile Include="Adapter\Adapter_Print_Ver1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
