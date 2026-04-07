@@ -8,6 +8,6 @@ backlinks:
   - "[[doc/_MOC_.md|doc]]"
 outgoinglinks:
   - "[[doc/01. Creational Pattern/01.01. Signleton|01. Signleton]]"
+  - "[[doc/01. Creational Pattern/01.02. AbstractFactory|01.02. AbstractFactory]]"
 ---
 ---
-

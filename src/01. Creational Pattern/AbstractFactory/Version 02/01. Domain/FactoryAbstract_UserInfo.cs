@@ -1,0 +1,34 @@
+namespace _01.Creational_Pattern.AbstractFactory.Version_02._01._Domain
+{
+    public class FactoryAbstract_UserInfo
+    {
+        #region ▶  Event Handle             ◀
+        #endregion // Event Handle
+
+        #region ▶  Fields                   ◀
+        private string _userId;
+        private string _passwd;
+        private string _userName;
+        #endregion // Fields
+
+        #region ▶  Properties               ◀
+        public string UserId
+        {
+            get => _userId;
+            set => _userId = value;
+        }
+
+        public string Passwd
+        {
+            get => _passwd;
+            set => _passwd = value;
+        }
+
+        public string UserName
+        {
+            get => _userName;
+            set => _userName = value;
+        }
+        #endregion // Properties
+    }
+}

@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01. Creational Pattern\01. Creational Pattern - AbstractFactory.cs" />
     <Compile Include="01. Creational Pattern\01. Creational Pattern - Singleton.cs" />
     <Compile Include="01. Creational Pattern\01. Creational Pattern.cs" />
     <Compile Include="02. Structural Pattern\02. Structural Pattern - Adapter.cs" />
