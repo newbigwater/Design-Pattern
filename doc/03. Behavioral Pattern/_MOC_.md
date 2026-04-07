@@ -8,7 +8,7 @@ backlinks:
   - "[[doc/_MOC_.md|doc]]"
 outgoinglinks:
   - "[[doc/03. Behavioral Pattern/03.01. Strategy|01. Strategy]]"
+  - "[[doc/03. Behavioral Pattern/03.02. TemplateMethod|02. TemplateMethod]]"
 ---
 
 ---
-
