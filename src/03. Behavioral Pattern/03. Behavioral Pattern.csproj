@@ -42,15 +42,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategy\Strategy_AgentGetCall.cs" />
-    <Compile Include="Strategy\Strategy_CallCenterScheduler_Ver1.cs" />
-    <Compile Include="Strategy\Strategy_CallCenterScheduler_Ver2.cs" />
-    <Compile Include="Strategy\Strategy_CallCenterScheduler_Ver3.cs" />
-    <Compile Include="Strategy\Strategy_LeastJob.cs" />
-    <Compile Include="Strategy\Strategy_PriorityAllocation.cs" />
-    <Compile Include="Strategy\Strategy_RoundRobin.cs" />
-    <Compile Include="Strategy\Strategy_ScheduleResult_Ver3.cs" />
-    <Compile Include="Strategy\Strategy_Scheduler.cs" />
+    <Compile Include="Strategy\Version 01\01. Strategy\Strategy_Scheduler.cs" />
+    <Compile Include="Strategy\Version 01\02. Concrete\Strategy_AgentGetCall.cs" />
+    <Compile Include="Strategy\Version 01\02. Concrete\Strategy_LeastJob.cs" />
+    <Compile Include="Strategy\Version 01\02. Concrete\Strategy_PriorityAllocation.cs" />
+    <Compile Include="Strategy\Version 01\02. Concrete\Strategy_RoundRobin.cs" />
+    <Compile Include="Strategy\Version 01\03. Context\Strategy_CallCenterScheduler_Ver1.cs" />
+    <Compile Include="Strategy\Version 02\01. Strategy\Strategy_Scheduler.cs" />
+    <Compile Include="Strategy\Version 02\02. Concrete\Strategy_AgentGetCall.cs" />
+    <Compile Include="Strategy\Version 02\02. Concrete\Strategy_LeastJob.cs" />
+    <Compile Include="Strategy\Version 02\02. Concrete\Strategy_PriorityAllocation.cs" />
+    <Compile Include="Strategy\Version 02\02. Concrete\Strategy_RoundRobin.cs" />
+    <Compile Include="Strategy\Version 02\03. Context\Strategy_CallCenterScheduler_Ver2.cs" />
+    <Compile Include="Strategy\Version 03\01. Strategy\Strategy_Scheduler.cs" />
+    <Compile Include="Strategy\Version 03\02. Concrete\Strategy_AgentGetCall.cs" />
+    <Compile Include="Strategy\Version 03\02. Concrete\Strategy_LeastJob.cs" />
+    <Compile Include="Strategy\Version 03\02. Concrete\Strategy_PriorityAllocation.cs" />
+    <Compile Include="Strategy\Version 03\02. Concrete\Strategy_RoundRobin.cs" />
+    <Compile Include="Strategy\Version 03\03. Context\Strategy_CallCenterScheduler_Ver3.cs" />
+    <Compile Include="Strategy\Version 03\04. Result\Strategy_ScheduleResult_Ver3.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

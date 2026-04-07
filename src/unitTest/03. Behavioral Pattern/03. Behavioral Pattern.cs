@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using _03.Behavioral_Pattern.Strategy;
 
 namespace unitTest._03._Behavioral_Pattern
 {

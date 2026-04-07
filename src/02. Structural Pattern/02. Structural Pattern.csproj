@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter\Adapter_Banner.cs" />
-    <Compile Include="Adapter\Adapter_IPrint_Ver2.cs" />
-    <Compile Include="Adapter\Adapter_PrintBanner_InheritanceAdapter_Ver2.cs" />
-    <Compile Include="Adapter\Adapter_PrintBanner_CompositeAdapter_Ver3.cs" />
-    <Compile Include="Adapter\Adapter_PrintBanner_Ver1.cs" />
-    <Compile Include="Adapter\Adapter_Print_Ver1.cs" />
+    <Compile Include="Adapter\Version 01\01. Adaptee\Adapter_Banner.cs" />
+    <Compile Include="Adapter\Version 01\02. Target\Adapter_Print_Ver1.cs" />
+    <Compile Include="Adapter\Version 01\03. Adapter\Adapter_PrintBanner_Ver1.cs" />
+    <Compile Include="Adapter\Version 02\01. Adaptee\Adapter_Banner.cs" />
+    <Compile Include="Adapter\Version 02\02. Target\Adapter_IPrint_Ver2.cs" />
+    <Compile Include="Adapter\Version 02\03. Adapter\Adapter_PrintBanner_InheritanceAdapter_Ver2.cs" />
+    <Compile Include="Adapter\Version 03\01. Adaptee\Adapter_Banner.cs" />
+    <Compile Include="Adapter\Version 03\02. Target\Adapter_IPrint_Ver2.cs" />
+    <Compile Include="Adapter\Version 03\03. Adapter\Adapter_PrintBanner_CompositeAdapter_Ver3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
