@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.36631.11
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "app\app.csproj", "{B3789BEF-CE9D-4EF8-BD07-0D70AE627868}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Creational Pattern", "01. Creational Pattern\01. Creational Pattern.csproj", "{CFDE6008-0E5F-436F-AD24-4163240F1075}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Structural Pattern", "02. Structural Pattern\02. Structural Pattern.csproj", "{499D040F-0471-4478-B441-2436E07057A0}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3789BEF-CE9D-4EF8-BD07-0D70AE627868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3789BEF-CE9D-4EF8-BD07-0D70AE627868}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3789BEF-CE9D-4EF8-BD07-0D70AE627868}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3789BEF-CE9D-4EF8-BD07-0D70AE627868}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFDE6008-0E5F-436F-AD24-4163240F1075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFDE6008-0E5F-436F-AD24-4163240F1075}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFDE6008-0E5F-436F-AD24-4163240F1075}.Release|Any CPU.ActiveCfg = Release|Any CPU
