@@ -1,10 +1,11 @@
 # Design-Pattern
 
-`doc`에 신규 문서가 추가되면 아래 목록에 함께 반영합니다.
+[01. GoF Design Pattern](doc/01.%20GoF%20Design%20Pattern.md)
 
 ## 01. Creational Pattern
 - [01.01. Signleton](doc/01.%20Creational%20Pattern/01.01.%20Signleton.md)
 - [01.02. AbstractFactory](doc/01.%20Creational%20Pattern/01.02.%20AbstractFactory.md)
+- [01.03. FactoryMethod](doc/01.%20Creational%20Pattern/01.03.%20FactoryMethod.md)
 
 ## 02. Structural Pattern
 - [02.01. Adapter](doc/02.%20Structural%20Pattern/02.01.%20Adapter.md)

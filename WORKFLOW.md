@@ -1,83 +1,97 @@
-# Workflow Guide
+﻿# 워크플로우 가이드
 
-## Scope
-This file defines practical working steps for recurring tasks in this repository.
+## 범위
+이 문서는 저장소에서 반복적으로 수행하는 작업의 실무 절차를 정의한다.
 
-## Priority
-- `AGENTS.md` defines repository-level rules.
-- If this file conflicts with `AGENTS.md`, follow `AGENTS.md`.
+## 우선순위
+- 저장소 수준 규칙은 `AGENTS.md`에서 정의한다.
+- 본 문서와 `AGENTS.md`가 충돌하면 `AGENTS.md`를 따른다.
 
-## Documentation Workflow
-Apply this when creating or rewriting pattern documents under `doc/`.
+## 작업 진행 표준 순서
+특정 경로와 함께 `작업 진행` 요청이 들어오면 아래 순서를 반드시 따른다.
 
-## Versioned Improvement Workflow
-Apply this when the user provides a source folder such as `src/<category>/<pattern>/Version 01/`.
+1. 코드 리뷰
+2. 개선된 버전 기능 추가
+3. 관련 코드 유닛 테스트 코드 작성
+4. Doc 작성
+5. README 작성
 
-### 1) Baseline Review
-- Treat `Version 01/` as the original learning baseline.
-- Review the code before changing anything and identify improvement points in small, explainable steps.
+## 문서 작업 워크플로우
+`doc/` 아래 패턴 문서를 신규 작성하거나 재작성할 때 적용한다.
 
-### 2) Version Creation Rule
-- Start improvements at `Version 02/`.
-- Create a new version folder for each meaningful improvement step.
-- If a structural change is large, split it into multiple versions instead of combining it into one jump.
+## 버전 기반 개선 워크플로우
+`src/<category>/<pattern>/Version 01/` 형태의 소스 폴더가 입력되면 적용한다.
 
-### 3) Version Isolation Rule
-- Keep each version folder self-contained.
-- Duplicate same-named files per version when needed.
-- Do not reference source files across `Version 01/`, `Version 02/`, and later folders.
+### 1) 기준 버전 리뷰
+- `Version 01/`을 원본 학습 기준으로 간주한다.
+- 변경 전에 코드를 검토하고, 개선 지점을 작고 설명 가능한 단계로 도출한다.
 
-### 1) Standard Document Structure
-Use the following top-level structure:
-1. Pattern overview
-2. Example domain description
-3. Per-version analysis
-4. Version differences
+### 2) 버전 생성 규칙
+- 개선은 `Version 02/`부터 시작한다.
+- 의미 있는 개선 단계마다 새 버전 폴더를 만든다.
+- 구조 변경이 크면 한 번에 합치지 말고 여러 버전으로 분리한다.
 
-### 2) Per-version Analysis Format
-For each version section, include both:
+### 3) 버전 격리 규칙
+- 각 버전 폴더는 반드시 독립적으로 유지한다.
+- 필요하면 동일 파일명을 버전별로 복제한다.
+- `Version 01/`, `Version 02/` 등 버전 간 소스 참조를 만들지 않는다.
+
+### 4) 표준 문서 구조
+문서는 아래 상위 구조를 따른다.
+
+1. 패턴 개요
+2. 예제 도메인 설명
+3. 버전별 분석
+4. 버전 차이
+
+### 5) 버전별 분석 형식
+각 버전 섹션에는 아래 두 항목을 모두 포함한다.
+
 - `Pseudo Code`
 - `PlantUML`
 
-Recommended order:
+권장 순서는 아래와 같다.
+
 - `### 3.x VerN - <summary>`
 - `#### Pseudo Code`
 - `#### PlantUML`
 
-Document each improvement version from `Version 01` through the latest version, and explain what changed in that step and why it was separated from the next step.
+`Version 01`부터 최신 버전까지 개선 과정을 순서대로 설명하고, 왜 해당 단계를 다음 단계와 분리했는지 명확히 기록한다.
 
-### 3) Language and Notation Rules
-- Write explanatory prose in Korean.
-- When writing generic notation like `<T>` in prose, use backticks: `` `<T>` ``.
-- Keep code identifiers as-is (class names, method names, namespaces).
+### 6) 언어 및 표기 규칙
+- 설명 문장은 한국어로 작성한다.
+- 본문에서 `<T>` 같은 일반 표기는 `` `<T>` ``처럼 백틱으로 감싼다.
+- 클래스명, 메서드명, 네임스페이스 등 코드 식별자는 원문 그대로 유지한다.
 
-### 4) README Synchronization Rule
-Whenever a new document is added under `doc/`:
-- Add or update the corresponding list entry in repository root `README.md`.
-- Keep links grouped by pattern category (Creational / Structural / Behavioral).
+### 7) README 동기화 규칙
+`doc/`에 신규 문서를 추가하면 다음을 수행한다.
 
-### 5) MOC Synchronization Rule
-When a new pattern document is added:
-- Update `doc/_MOC_.md` if category-level links changed.
-- Update category `_MOC_.md` in the matching folder.
+- 저장소 루트 `README.md`에 해당 항목 링크를 추가/갱신한다.
+- 링크는 Creational / Structural / Behavioral 카테고리 구조를 유지한다.
 
-## Test Workflow
-- Add or update MSTest suites in `src/unitTest/` for the pattern under review.
-- Ensure tests cover each version independently when multiple version folders exist.
-- Include regression-oriented assertions for the specific improvement introduced in each new version.
+### 8) MOC 동기화 규칙
+신규 패턴 문서 추가 시 다음을 수행한다.
 
-## Commit Workflow
-- Keep commit messages short and imperative.
-- Do not include author attribution text such as "created by AI agent".
-- Stage only intended files when unrelated local changes exist.
+- 카테고리 링크 변경이 있으면 `doc/_MOC_.md`를 갱신한다.
+- 해당 카테고리 폴더의 `_MOC_.md`도 함께 갱신한다.
 
-## Pre-push Checklist
-- Baseline `Version 01/` was reviewed before adding later versions.
-- Each improvement step has its own version folder when the change is structurally meaningful.
-- Version folders are self-contained with no cross-version source dependency.
-- Document follows the 1~4 structure above.
-- Version sections include both pseudo code and PlantUML.
-- Documentation explains the reason for each version split.
-- Test suite covers the added or updated versions.
-- README index is updated for new docs.
-- No unintended workspace/editor metadata is staged.
+## 테스트 워크플로우
+- 검토 대상 패턴의 MSTest를 `src/unitTest/`에 추가/갱신한다.
+- 버전이 여러 개인 경우 버전별 독립 검증이 가능해야 한다.
+- 신규 버전 개선 포인트를 검증하는 회귀 중심 assertion을 포함한다.
+
+## 커밋 워크플로우
+- 커밋 메시지는 짧고 명령형으로 작성한다.
+- `created by AI agent` 같은 작성자 표기 문구는 포함하지 않는다.
+- 작업 범위와 무관한 변경 파일은 스테이징하지 않는다.
+
+## 푸시 전 체크리스트
+- `Version 01/` 기준 리뷰를 완료했는가
+- 구조적으로 의미 있는 개선을 버전별 단계로 분리했는가
+- 버전 간 소스 의존 없이 버전 폴더를 독립 유지했는가
+- 문서가 1~4 표준 구조를 따르는가
+- 각 버전에 `Pseudo Code`, `PlantUML`이 모두 포함되어 있는가
+- 버전 분리 이유가 문서에 설명되어 있는가
+- 추가/수정 버전에 대한 테스트가 준비되어 있는가
+- 신규 문서가 `README.md` 목록에 반영되어 있는가
+- 의도하지 않은 에디터 메타데이터/잡파일이 스테이징되지 않았는가

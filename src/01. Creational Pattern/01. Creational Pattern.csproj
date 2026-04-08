@@ -76,6 +76,16 @@
     <Compile Include="AbstractFactory\Version 03\04. Factory\AbstractFactory_DAO_MySQL_Factory.cs" />
     <Compile Include="AbstractFactory\Version 03\04. Factory\AbstractFactory_DAO_Oracle_Factory.cs" />
     <Compile Include="AbstractFactory\Version 03\04. Factory\AbstractFactory_DAO_Factory.cs" />
+    <Compile Include="FactoryMethod\Version 01\FactoryMethod_Car.cs" />
+    <Compile Include="FactoryMethod\Version 01\FactoryMethod_CarFactory.cs" />
+    <Compile Include="FactoryMethod\Version 01\FactoryMethod_HDI_CarFactory.cs" />
+    <Compile Include="FactoryMethod\Version 01\FactoryMethod_Santafe.cs" />
+    <Compile Include="FactoryMethod\Version 01\FactoryMethod_Sonata.cs" />
+    <Compile Include="FactoryMethod\Version 02\FactoryMethod_Car.cs" />
+    <Compile Include="FactoryMethod\Version 02\FactoryMethod_CarFactory.cs" />
+    <Compile Include="FactoryMethod\Version 02\FactoryMethod_HDI_CarFactory.cs" />
+    <Compile Include="FactoryMethod\Version 02\FactoryMethod_Santafe.cs" />
+    <Compile Include="FactoryMethod\Version 02\FactoryMethod_Sonata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton\Version 01\Singleton_ConnectionPool_Ver1.cs" />
     <Compile Include="Singleton\Version 02\Singleton_ConnectionPool_Ver2.cs" />
