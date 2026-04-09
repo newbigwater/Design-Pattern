@@ -61,6 +61,17 @@
     <Compile Include="Strategy\Version 03\02. Concrete\Strategy_RoundRobin.cs" />
     <Compile Include="Strategy\Version 03\03. Context\Strategy_CallCenterScheduler_Ver3.cs" />
     <Compile Include="Strategy\Version 03\04. Result\Strategy_ScheduleResult_Ver3.cs" />
+    <Compile Include="State\Version 01\State_AdvancedLevel.cs" />
+    <Compile Include="State\Version 01\State_BeginnerLevel .cs" />
+    <Compile Include="State\Version 01\State_Player.cs" />
+    <Compile Include="State\Version 01\State_PlayerLevel.cs" />
+    <Compile Include="State\Version 01\State_SuperLevel.cs" />
+    <Compile Include="State\Version 02\State_AdvancedLevel.cs" />
+    <Compile Include="State\Version 02\State_BeginnerLevel.cs" />
+    <Compile Include="State\Version 02\State_Player.cs" />
+    <Compile Include="State\Version 02\State_PlayerLevel.cs" />
+    <Compile Include="State\Version 02\State_PlayResult.cs" />
+    <Compile Include="State\Version 02\State_SuperLevel.cs" />
     <Compile Include="TemplateMethod\Version 01\TemplateMethod_Player.cs" />
     <Compile Include="TemplateMethod\Version 01\TemplateMethod_SuperLevel.cs" />
     <Compile Include="TemplateMethod\Version 01\TemplateMethod_AdvancedLevel.cs" />

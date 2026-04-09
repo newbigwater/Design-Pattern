@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "doc/01. Creational Pattern/01.01. Signleton.md",
+                "file": "doc/03. Behavioral Pattern/03.03. State.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "01.01. Signleton"
+              "title": "03.03. State"
             }
           }
         ]
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 200
   },
   "right": {
     "id": "1d8aaf53ddb5f905",
@@ -170,7 +170,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "language/Podo/01.Standard/Start2/02. 일반 동사를 활용한 인물 소개 연습.md"
+                "file": "doc/01. Creational Pattern/01.03. FactoryMethod.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -189,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/02. 빅데이터의 유형/02.01. 빅데이터의 유형.md",
+                "file": "doc/01. Creational Pattern/01.03. FactoryMethod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 02.01. 빅데이터의 유형"
+              "title": "Backlinks for 01.03. FactoryMethod"
             }
           },
           {
@@ -228,7 +228,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Computer-Science/Data/BAE/01. Written exam/02. 빅데이터의 특징/02. 빅데이터의 유형/02.01. 빅데이터의 유형.md",
+                "file": "doc/01. Creational Pattern/01.03. FactoryMethod.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -256,7 +256,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 02.01. 빅데이터의 유형"
+              "title": "Graph of 01.03. FactoryMethod"
             }
           }
         ]
@@ -288,52 +288,52 @@
   },
   "active": "4b880b1888598ee6",
   "lastOpenFiles": [
+    "README.md",
+    "doc/03. Behavioral Pattern/03.03. State.md",
+    "src/unitTest/03. Behavioral Pattern/03. Behavioral Pattern - State.cs",
+    "src/03. Behavioral Pattern/State/Version 02/State_SuperLevel.cs",
+    "src/03. Behavioral Pattern/State/Version 02/State_AdvancedLevel.cs",
+    "src/03. Behavioral Pattern/State/Version 02/State_BeginnerLevel.cs",
+    "src/03. Behavioral Pattern/State/Version 02/State_Player.cs",
+    "src/03. Behavioral Pattern/State/Version 02/State_PlayerLevel.cs",
+    "src/03. Behavioral Pattern/State/Version 02/State_PlayResult.cs",
+    "src/03. Behavioral Pattern/State/Version 02",
+    "doc/01. Creational Pattern/01.03. FactoryMethod.md",
+    "src/unitTest/bin/Debug/unitTest.dll",
+    "src/unitTest/bin/Debug/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll",
+    "doc/01. Creational Pattern/01.02. AbstractFactory.md",
+    "WORKFLOW.md",
+    "doc/01. GoF Design Pattern.md",
+    "doc/03. Behavioral Pattern/03.02. TemplateMethod.md",
+    "doc/03. Behavioral Pattern/03.01. Strategy.md",
+    "doc/03. Behavioral Pattern/_MOC_.md",
+    "doc/_MOC_.md",
+    "doc/03. Behavioral Pattern/01. GoF Design Pattern_tmp.md",
+    "AGENTS.md",
+    "doc/02. Structural Pattern/02.01. Adapter.md",
+    "doc/01. Creational Pattern/01.01. Signleton.md",
     "doc/01. Creational Pattern/00. attachments/Pasted image 20260403083134.png",
     "doc/01. Creational Pattern/00. attachments/Pasted image 20260403083037.png",
     "doc/01. Creational Pattern/00. attachments/Pasted image 20260403083011.png",
-    "doc/01. Creational Pattern/00. attachments",
     "doc/02. Structural Pattern/00. attachments/Pasted image 20260403075144.png",
     "doc/02. Structural Pattern/00. attachments/Pasted image 20260403075139.png",
-    "doc/02. Structural Pattern/02.01. Adapter.md",
-    "doc/01. Creational Pattern/01.01. Signleton.md",
-    "README.md",
-    "doc/_MOC_.md",
-    "doc/03. Behavioral Pattern/03.01. Strategy.md",
-    "src/02. Structural Pattern/bin/Debug/_02.Structural_Pattern.dll",
-    "src/01. Creational Pattern/bin/Debug/_01.Creational_Pattern.dll",
-    "src/app/obj/Debug/app.csproj.AssemblyReference.cache",
-    "src/03. Behavioral Pattern/obj/Debug/03. Behavioral Pattern.csproj.AssemblyReference.cache",
-    "src/01. Creational Pattern/obj/Debug/01. Creational Pattern.csproj.AssemblyReference.cache",
     "00. System/00.01. Template/AC. Template-Pattern-Doc.md",
-    "src/01. Creational Pattern/AbstractFactory/01. Common/FactoryAbstract_ProductDAO.cs",
-    "src/01. Creational Pattern/AbstractFactory/01. Common/FactoryAbstract_UserInfoDAO.cs",
-    "src/01. Creational Pattern/AbstractFactory/01. Common",
-    "src/02. Structural Pattern/Adapter/Adapter_PrintBanner_CompositeAdapter_Ver3.cs",
     "doc/02. Structural Pattern/_MOC_.md",
     "src/02. Structural Pattern/Adapter/README.md",
     "doc/03. Behavioral Pattern/00. attachments/Pasted image 20260402083010.png",
     "doc/03. Behavioral Pattern/00. attachments/Pasted image 20260402082934.png",
     "doc/01. Creational Pattern/00. attachments/Pasted image 20260402082904.png",
     "doc/01. Creational Pattern/00. attachments/Pasted image 20260402082853.png",
-    "doc/03. Behavioral Pattern/_MOC_.md",
     "doc/01. Creational Pattern/_MOC_.md",
     "doc/03. Behavioral Pattern/03.01. Strategy_tmp.md",
     "doc/01. Creational Pattern/01. Signleton_tmp.md",
     "doc/01. Creational Pattern/01. Signgleton/_MOC_.md",
-    "doc/Untitled.md",
     "01. Doc/01. Design Pattern/_MOC_.md",
     "01. Doc/01. Design Pattern/01.02. Object-oriented programming.md",
     "01. Doc/01. Design Pattern/Untitled.md",
     "01. Doc/01. Design Pattern/01.01. Design Pattern.md",
     "01. Doc/01. Design Pattern/Object-oriented programming/_MOC_.md",
     "01. Doc/01. Design Pattern/00. attachments/Pasted image 20260326081723.png",
-    "01. Doc/_MOC_.md",
-    "01. Doc/Untitled.md",
-    "Untitled.md",
-    ".trash/Untitled.md",
-    "00. System/00.03. AI/01. Doc/01. Design/Artifact - 설계서.md",
-    "00. System/00.03. AI/01. Doc/01. Design/04. Agent Persona Portfolio - 설계서.md",
-    "00. System/00.02. Reference/attachments/Pasted image 20240418104202.png",
     "Factory Automation/Battery/Basic/2차전지 배터리 Cell.canvas",
     "Computer Science/Programming/UI/C#/WPF/Prism/Prism Library를 사용하는 개발자를 위한 안내.canvas",
     "Untitled.canvas",
