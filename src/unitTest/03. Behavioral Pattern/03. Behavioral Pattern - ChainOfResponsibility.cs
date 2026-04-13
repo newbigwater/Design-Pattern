@@ -3,6 +3,7 @@ using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ChainOfResponsibilityVer1 = _03.Behavioral_Pattern.ChainOfResponsibility.Version_01;
 using ChainOfResponsibilityVer2 = _03.Behavioral_Pattern.ChainOfResponsibility.Version_02;
+using ChainOfResponsibilityVer3 = _03.Behavioral_Pattern.ChainOfResponsibility.Version_03;
 
 namespace unitTest._03._Behavioral_Pattern
 {
@@ -152,6 +153,92 @@ namespace unitTest._03._Behavioral_Pattern
             CollectionAssert.AreEqual(expected, actual);
         }
 
+        [TestMethod("[ChainOfResponsibility Ver3 Uses Delegate Resolver]")]
+        public void ChainOfResponsibility_Ver3_Uses_Delegate_Resolver()
+        {
+            var bob = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.CreateLimitSupport("Bob", 100);
+            var result = bob.SupportRequest(new ChainOfResponsibilityVer3.ChainOfResponsibility_Trouble(99));
+
+            Assert.IsTrue(result.IsResolved);
+            Assert.AreEqual("[Bob]", result.Resolver);
+            Assert.AreEqual("[Trouble 99] is resolved by [Bob].", result.Message);
+        }
+
+        [TestMethod("[ChainOfResponsibility Ver3 Throws On Null Resolver]")]
+        public void ChainOfResponsibility_Ver3_Throws_On_Null_Resolver()
+        {
+            Assert.ThrowsException<ArgumentNullException>(
+                () => ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.Create("Alice", null));
+        }
+
+        [TestMethod("[ChainOfResponsibility Ver3 Stops Chain After Resolve]")]
+        public void ChainOfResponsibility_Ver3_Stops_Chain_After_Resolve()
+        {
+            string trace = string.Empty;
+
+            var alice = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.Create("Alice", trouble =>
+            {
+                trace += "Alice>";
+                return false;
+            });
+
+            var bob = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.Create("Bob", trouble =>
+            {
+                trace += "Bob>";
+                return true;
+            });
+
+            var charlie = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.Create("Charlie", trouble =>
+            {
+                trace += "Charlie>";
+                return true;
+            });
+
+            alice.SetNext(bob).SetNext(charlie);
+
+            var result = alice.SupportRequest(new ChainOfResponsibilityVer3.ChainOfResponsibility_Trouble(99));
+
+            Assert.IsTrue(result.IsResolved);
+            Assert.AreEqual("[Bob]", result.Resolver);
+            Assert.AreEqual("Alice>Bob>", trace);
+        }
+
+        [TestMethod("[ChainOfResponsibility Ver3 Scenario Produces Expected Chain Decisions]")]
+        public void ChainOfResponsibility_Ver3_Scenario_Produces_Expected_Chain_Decisions()
+        {
+            var alice = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.CreateNotSupport("Alice");
+            var bob = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.CreateLimitSupport("Bob", 100);
+            var charlie = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.CreateSpecialSupport("Charlie", 429);
+            var diana = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.CreateLimitSupport("Diana", 200);
+            var elmo = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.CreateOddSupport("Elmo");
+            var fred = ChainOfResponsibilityVer3.ChainOfResponsibility_SupportFactory.CreateLimitSupport("Fred", 300);
+
+            alice.SetNext(bob).SetNext(charlie).SetNext(diana).SetNext(elmo).SetNext(fred);
+
+            string[] actual = RunScenarioVer3(alice);
+            string[] expected =
+            {
+                "[Trouble 0] is resolved by [Bob].",
+                "[Trouble 33] is resolved by [Bob].",
+                "[Trouble 66] is resolved by [Bob].",
+                "[Trouble 99] is resolved by [Bob].",
+                "[Trouble 132] is resolved by [Diana].",
+                "[Trouble 165] is resolved by [Diana].",
+                "[Trouble 198] is resolved by [Diana].",
+                "[Trouble 231] is resolved by [Elmo].",
+                "[Trouble 264] is resolved by [Fred].",
+                "[Trouble 297] is resolved by [Elmo].",
+                "[Trouble 330] cannot be resolved.",
+                "[Trouble 363] is resolved by [Elmo].",
+                "[Trouble 396] cannot be resolved.",
+                "[Trouble 429] is resolved by [Charlie].",
+                "[Trouble 462] cannot be resolved.",
+                "[Trouble 495] is resolved by [Elmo]."
+            };
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
         private static string CaptureSupportOutput(ChainOfResponsibilityVer1.ChainOfResponsibility_Support support, int troubleNumber)
         {
             var writer = new StringWriter();
@@ -199,6 +286,20 @@ namespace unitTest._03._Behavioral_Pattern
             for (int i = 0; i < 500; i += 33)
             {
                 var result = support.SupportRequest(new ChainOfResponsibilityVer2.ChainOfResponsibility_Trouble(i));
+                messages[index++] = result.Message;
+            }
+
+            return messages;
+        }
+
+        private static string[] RunScenarioVer3(ChainOfResponsibilityVer3.ChainOfResponsibility_Support support)
+        {
+            var messages = new string[16];
+            int index = 0;
+
+            for (int i = 0; i < 500; i += 33)
+            {
+                var result = support.SupportRequest(new ChainOfResponsibilityVer3.ChainOfResponsibility_Trouble(i));
                 messages[index++] = result.Message;
             }
 

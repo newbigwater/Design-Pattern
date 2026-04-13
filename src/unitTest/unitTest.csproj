@@ -57,6 +57,7 @@
     <Compile Include="02. Structural Pattern\02. Structural Pattern.cs" />
     <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern - Strategy.cs" />
     <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern - ChainOfResponsibility.cs" />
+    <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern - Command.cs" />
     <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern - State.cs" />
     <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern - TemplateMethod.cs" />
     <Compile Include="03. Behavioral Pattern\03. Behavioral Pattern.cs" />

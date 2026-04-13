@@ -15,3 +15,4 @@
 - [03.02. TemplateMethod](doc/03.%20Behavioral%20Pattern/03.02.%20TemplateMethod.md)
 - [03.03. State](doc/03.%20Behavioral%20Pattern/03.03.%20State.md)
 - [03.04. ChainOfResponsibility](doc/03.%20Behavioral%20Pattern/03.04.%20ChainOfResponsibility.md)
+- [03.05. Command](doc/03.%20Behavioral%20Pattern/03.05.%20Command.md)

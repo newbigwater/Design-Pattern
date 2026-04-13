@@ -11,6 +11,7 @@ outgoinglinks:
   - "[[doc/03. Behavioral Pattern/03.02. TemplateMethod|02. TemplateMethod]]"
   - "[[doc/03. Behavioral Pattern/03.03. State|03. State]]"
   - "[[doc/03. Behavioral Pattern/03.04. ChainOfResponsibility|04. ChainOfResponsibility]]"
+  - "[[doc/03. Behavioral Pattern/03.05. Command|05. Command]]"
 ---
 
 ---

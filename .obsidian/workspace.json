@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "doc/03. Behavioral Pattern/03.03. State.md",
+                "file": "doc/01. GoF Design Pattern.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "03.03. State"
+              "title": "01. GoF Design Pattern"
             }
           }
         ]
@@ -288,21 +288,23 @@
   },
   "active": "4b880b1888598ee6",
   "lastOpenFiles": [
-    "README.md",
-    "doc/03. Behavioral Pattern/03.03. State.md",
-    "src/unitTest/03. Behavioral Pattern/03. Behavioral Pattern - State.cs",
-    "src/03. Behavioral Pattern/State/Version 02/State_SuperLevel.cs",
-    "src/03. Behavioral Pattern/State/Version 02/State_AdvancedLevel.cs",
-    "src/03. Behavioral Pattern/State/Version 02/State_BeginnerLevel.cs",
-    "src/03. Behavioral Pattern/State/Version 02/State_Player.cs",
-    "src/03. Behavioral Pattern/State/Version 02/State_PlayerLevel.cs",
-    "src/03. Behavioral Pattern/State/Version 02/State_PlayResult.cs",
-    "src/03. Behavioral Pattern/State/Version 02",
-    "doc/01. Creational Pattern/01.03. FactoryMethod.md",
-    "src/unitTest/bin/Debug/unitTest.dll",
-    "src/unitTest/bin/Debug/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll",
     "doc/01. Creational Pattern/01.02. AbstractFactory.md",
+    "doc/03. Behavioral Pattern/03.05. Command.md",
+    "README.md",
+    "doc/03. Behavioral Pattern/03.04. ChainOfResponsibility.md",
+    "TestResults/Deploy_A1292024005 2026-04-14 08_21_22/In/A1292024005O02",
+    "TestResults/Deploy_A1292024005 2026-04-14 08_21_22/Out",
+    "TestResults/Deploy_A1292024005 2026-04-14 08_21_22/In",
+    "TestResults/Deploy_A1292024005 2026-04-14 08_21_22",
+    "src/unitTest/03. Behavioral Pattern/03. Behavioral Pattern - Command.cs",
+    "src/03. Behavioral Pattern/Command/Version 02/Command_Main.cs",
+    "src/03. Behavioral Pattern/Command/Version 02/Command_DrawCanvas.cs",
+    "src/03. Behavioral Pattern/Command/Version 02/Command_MacroCommand.cs",
+    "src/03. Behavioral Pattern/Command/Version 02/Command_DrawCommand.cs",
+    "src/03. Behavioral Pattern/Command/Version 02/Command_DrawSnapshot.cs",
     "WORKFLOW.md",
+    "doc/03. Behavioral Pattern/03.03. State.md",
+    "doc/01. Creational Pattern/01.03. FactoryMethod.md",
     "doc/01. GoF Design Pattern.md",
     "doc/03. Behavioral Pattern/03.02. TemplateMethod.md",
     "doc/03. Behavioral Pattern/03.01. Strategy.md",
@@ -330,9 +332,6 @@
     "doc/01. Creational Pattern/01. Signgleton/_MOC_.md",
     "01. Doc/01. Design Pattern/_MOC_.md",
     "01. Doc/01. Design Pattern/01.02. Object-oriented programming.md",
-    "01. Doc/01. Design Pattern/Untitled.md",
-    "01. Doc/01. Design Pattern/01.01. Design Pattern.md",
-    "01. Doc/01. Design Pattern/Object-oriented programming/_MOC_.md",
     "01. Doc/01. Design Pattern/00. attachments/Pasted image 20260326081723.png",
     "Factory Automation/Battery/Basic/2차전지 배터리 Cell.canvas",
     "Computer Science/Programming/UI/C#/WPF/Prism/Prism Library를 사용하는 개발자를 위한 안내.canvas",
