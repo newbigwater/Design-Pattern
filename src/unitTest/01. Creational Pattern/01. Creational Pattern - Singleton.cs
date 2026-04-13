@@ -61,5 +61,16 @@ namespace unitTest._01._Creational_Pattern
 
             Assert.AreEqual(pool1.GetConnection(), pool2.GetConnection());
         }
+
+        [TestMethod("[Singleton Ver3 Scenario Returns Same Instance As Main Flow]")]
+        public void Singleton_Ver3_Scenario_Returns_Same_Instance_As_Main_Flow()
+        {
+            SingletonVer3.Singleton_ConnectionPool_Ver3 pool1 = SingletonVer3.Singleton_ConnectionPool_Ver3.Instance;
+            SingletonVer3.Singleton_ConnectionPool_Ver3 pool2 = SingletonVer3.Singleton_ConnectionPool_Ver3.Instance;
+
+            bool isSame = ReferenceEquals(pool1, pool2);
+
+            Assert.IsTrue(isSame);
+        }
     }
 }

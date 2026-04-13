@@ -46,5 +46,19 @@ namespace unitTest._02._Structural_Pattern
             Assert.ThrowsException<System.ArgumentNullException>(
                 () => new AdapterVer3Adapter.Adapter_PrintBanner_CompositeAdapter_Ver3(null));
         }
+
+        [TestMethod("[Adapter Ver3 Scenario Runs Main Flow]")]
+        public void Adapter_Ver3_Scenario_Runs_Main_Flow()
+        {
+            AdapterVer3Target.Adapter_IPrint_Ver2 printer =
+                new AdapterVer3Adapter.Adapter_PrintBanner_CompositeAdapter_Ver3(
+                    new AdapterVer3Adaptee.Adapter_Banner("Hello"));
+
+            string weak = printer.PrintWeak();
+            string strong = printer.PrintStrong();
+
+            Assert.AreEqual("(Hello)", weak);
+            Assert.AreEqual("*Hello*", strong);
+        }
     }
 }

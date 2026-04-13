@@ -92,5 +92,48 @@ namespace unitTest._01._Creational_Pattern
 
             Assert.ThrowsException<System.ArgumentNullException>(() => userDao.DeleteUserInfo(null));
         }
+
+        [TestMethod("[AbstractFactory Ver3 Scenario Runs User And Product Transactions]")]
+        public void AbstractFactory_Ver3_Scenario_Runs_User_And_Product_Transactions()
+        {
+            var factory = Version03Factory.AbstractFactory_DAO_Factory.CreateFactory("oracle");
+            var userDao = factory.CreateUserInfoDao();
+            var productDao = factory.CreateProductDao();
+
+            var userInfo = new Version03Domain.FactoryAbstract_UserInfo
+            {
+                UserId = "12345",
+                Passwd = "!@#$%",
+                UserName = "홍길동"
+            };
+
+            var product = new Version03Domain.FactoryAbstract_Product
+            {
+                ProductId = "0011AA",
+                ProductName = "TV"
+            };
+
+            var commands = new[]
+            {
+                userDao.InsertUserInfo(userInfo),
+                userDao.UpdateUserInfo(userInfo),
+                userDao.DeleteUserInfo(userInfo),
+                productDao.InsertProduct(product),
+                productDao.UpdateProduct(product),
+                productDao.DeleteProduct(product)
+            };
+
+            var expected = new[]
+            {
+                "INSERT Oracle UserInfo userId = 12345",
+                "UPDATE Oracle UserInfo userId = 12345",
+                "DELETE Oracle UserInfo userId = 12345",
+                "INSERT Oracle Product productId = 0011AA",
+                "UPDATE Oracle Product productId = 0011AA",
+                "DELETE Oracle Product productId = 0011AA"
+            };
+
+            CollectionAssert.AreEqual(expected, commands);
+        }
     }
 }

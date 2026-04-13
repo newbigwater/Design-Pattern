@@ -59,5 +59,23 @@ namespace unitTest._01._Creational_Pattern
 
             Assert.ThrowsException<ArgumentException>(() => factory.SellCar(string.Empty));
         }
+
+        [TestMethod("[FactoryMethod Ver2 Scenario Reuses Reserved Car By Owner]")]
+        public void FactoryMethod_Ver2_Scenario_Reuses_Reserved_Car_By_Owner()
+        {
+            var factory = new FactoryMethodVer2.FactoryMethod_HDI_CarFactory();
+
+            var created = factory.CreateCar("factorymethod_sonata");
+            var firstReservationMessage = factory.ReservationCar(nameof(FactoryMethodVer2.FactoryMethod_Sonata), "Tomas");
+            var secondReservationMessage = factory.ReservationCar(nameof(FactoryMethodVer2.FactoryMethod_Santafe), "Tomas");
+            var myCar = factory.ReturnCar("Tomas");
+            var hisCar = factory.ReturnCar("Tomas");
+
+            Assert.AreEqual(nameof(FactoryMethodVer2.FactoryMethod_Sonata), created.CarType);
+            StringAssert.Contains(firstReservationMessage, "예약되었습니다");
+            StringAssert.Contains(secondReservationMessage, "이미 'Tomas'님의 차량은 'FactoryMethod_Sonata'으로 예약되었습니다.");
+            Assert.AreSame(myCar, hisCar);
+            Assert.AreEqual(nameof(FactoryMethodVer2.FactoryMethod_Sonata), myCar.CarType);
+        }
     }
 }

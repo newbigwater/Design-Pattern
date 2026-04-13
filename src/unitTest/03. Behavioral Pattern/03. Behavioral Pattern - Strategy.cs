@@ -91,5 +91,33 @@ namespace unitTest._03._Behavioral_Pattern
             Assert.AreEqual(strategy.GetNextCall(), result.NextCallMessage);
             Assert.AreEqual(strategy.SendCallToAgent(), result.AllocationMessage);
         }
+
+        [TestMethod("[Strategy Ver1 Scenario Selects Strategy By Input Key]")]
+        public void Strategy_Ver1_Scenario_Selects_Strategy_By_Input_Key()
+        {
+            StrategyVer1Context.Strategy_CallCenterScheduler_Ver1 scheduler = new StrategyVer1Context.Strategy_CallCenterScheduler_Ver1();
+
+            string roundRobinResult = scheduler.Run(MapScenarioInputToSchedulerType('R'));
+            string leastJobResult = scheduler.Run(MapScenarioInputToSchedulerType('L'));
+            string priorityResult = scheduler.Run(MapScenarioInputToSchedulerType('P'));
+            string agentGetCallResult = scheduler.Run(MapScenarioInputToSchedulerType('A'));
+
+            StringAssert.Contains(roundRobinResult, "Round Robin");
+            StringAssert.Contains(leastJobResult, "Least Job");
+            StringAssert.Contains(priorityResult, "Priority Allocation");
+            StringAssert.Contains(agentGetCallResult, "Agent Get Call");
+        }
+
+        private static string MapScenarioInputToSchedulerType(char key)
+        {
+            switch (char.ToUpperInvariant(key))
+            {
+                case 'R': return "RoundRobin";
+                case 'L': return "LeastJob";
+                case 'P': return "PriorityAllocation";
+                case 'A': return "AgentGetCall";
+                default: throw new System.ArgumentException("지원되지 않는 기능입니다.", nameof(key));
+            }
+        }
     }
 }

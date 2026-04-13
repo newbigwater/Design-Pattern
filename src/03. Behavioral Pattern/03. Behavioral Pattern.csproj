@@ -41,6 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChainOfResponsibility\Version 01\ChainOfResponsibility_LimitSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 01\ChainOfResponsibility_OddSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 01\ChainOfResponsibility_NotSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 01\ChainOfResponsibility_SpecialSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 01\ChainOfResponsibility_Support.cs" />
+    <Compile Include="ChainOfResponsibility\Version 01\ChainOfResponsibility_Trouble.cs" />
+    <Compile Include="ChainOfResponsibility\Version 02\ChainOfResponsibility_LimitSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 02\ChainOfResponsibility_OddSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 02\ChainOfResponsibility_NotSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 02\ChainOfResponsibility_Result.cs" />
+    <Compile Include="ChainOfResponsibility\Version 02\ChainOfResponsibility_SpecialSupport.cs" />
+    <Compile Include="ChainOfResponsibility\Version 02\ChainOfResponsibility_Support.cs" />
+    <Compile Include="ChainOfResponsibility\Version 02\ChainOfResponsibility_Trouble.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\Version 01\01. Strategy\Strategy_Scheduler.cs" />
     <Compile Include="Strategy\Version 01\02. Concrete\Strategy_AgentGetCall.cs" />

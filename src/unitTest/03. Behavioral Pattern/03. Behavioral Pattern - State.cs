@@ -51,5 +51,24 @@ namespace unitTest._03._Behavioral_Pattern
 
             Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => player.Play(-1));
         }
+
+        [TestMethod("[State Ver2 Scenario Upgrades Level In Sequence]")]
+        public void State_Ver2_Scenario_Upgrades_Level_In_Sequence()
+        {
+            var player = new StateVer2.State_Player();
+
+            StateVer2.State_PlayResult beginner = player.Play(1);
+            string advancedMessage = player.UpgradeLevel(new StateVer2.State_AdvancedLevel());
+            StateVer2.State_PlayResult advanced = player.Play(2);
+            string superMessage = player.UpgradeLevel(new StateVer2.State_SuperLevel());
+            StateVer2.State_PlayResult super = player.Play(3);
+
+            Assert.AreEqual(1, beginner.JumpCount);
+            Assert.AreEqual(2, advanced.JumpCount);
+            Assert.AreEqual(3, super.JumpCount);
+            Assert.IsFalse(string.IsNullOrWhiteSpace(advancedMessage));
+            Assert.IsFalse(string.IsNullOrWhiteSpace(superMessage));
+            Assert.IsInstanceOfType(player.Level, typeof(StateVer2.State_SuperLevel));
+        }
     }
 }
