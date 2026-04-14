@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="01. Creational Pattern\01. Creational Pattern - AbstractFactory.cs" />
+    <Compile Include="01. Creational Pattern\01. Creational Pattern - Builder.cs" />
     <Compile Include="01. Creational Pattern\01. Creational Pattern - FactoryMethod.cs" />
     <Compile Include="01. Creational Pattern\01. Creational Pattern - Singleton.cs" />
     <Compile Include="01. Creational Pattern\01. Creational Pattern.cs" />
